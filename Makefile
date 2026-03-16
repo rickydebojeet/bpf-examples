@@ -18,6 +18,7 @@ include config.mk
 SUBDIRS :=
 SUBDIRS += AF_XDP-example
 SUBDIRS += AF_XDP-forwarding
+SUBDIRS += AF_XDP-redirection
 SUBDIRS += ktrace-CO-RE
 SUBDIRS += tc-policy
 SUBDIRS += delay-kfunc
