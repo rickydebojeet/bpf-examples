@@ -1860,7 +1860,7 @@ static void load_xdp_program(void)
 	char errmsg[STRERR_BUFSIZE];
 	int err;
 
-	xdp_prog = xdp_program__open_file("xdpsock_kern.o", NULL, NULL);
+	xdp_prog = xdp_program__open_file("xsk_redir_kern.o", NULL, NULL);
 	err = libxdp_get_error(xdp_prog);
 	if (err) {
 		libxdp_strerror(err, errmsg, sizeof(errmsg));
